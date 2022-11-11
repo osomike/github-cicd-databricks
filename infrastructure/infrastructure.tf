@@ -37,6 +37,13 @@ provider "azurerm" {
   }
 }
 
+## comment this if the resource group has to be imported (See Readme)
+## uncomment again once the import is done and you run "terraform apply"
+# provide configuration details for the Databricks terraform provider
+provider "databricks" {
+  # Important to keep
+  azure_workspace_resource_id = azurerm_databricks_workspace.databricks_workspace.id
+}
 
 # For naming conventions please refer to:
 # https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
