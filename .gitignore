@@ -1,0 +1,15 @@
+
+# Virtual environments
+venv/*
+
+# Private folder
+private/
+
+# Pycache
+__pycache__/
+
+# Test coverage files
+*.coverage
+
+# Terraform files
+*.terraform*
